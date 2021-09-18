@@ -21,12 +21,12 @@ public class Bronze_10250 {
             quotient = N / H; //XX를 정하는 기준
             remainder = N % H; //YY를 정하는 기준 0일때는 H 아니면 나머지 값 그대로
 
-            quotient = quotient == W ? quotient : quotient+1;
+            quotient = quotient == W || remainder == 0 ? quotient : quotient+1;
             remainder = remainder == 0 ? H : remainder;
 
-            //output = remainder + String.format("%01d", quotient);
             output = remainder + (quotient >= 10 ? quotient +"": "0"+quotient);
-            bw.write(output + "\n");
+            bw.write(output);
+            if(i+1 != T)bw.newLine();
         }
 
         bw.flush();
