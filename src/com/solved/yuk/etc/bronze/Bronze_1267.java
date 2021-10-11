@@ -6,7 +6,7 @@ public class Bronze_1267 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+        // 히스토리 변경
         int N = Integer.parseInt(br.readLine());
         String[] input = br.readLine().split(" ");
         int Y = 0, M = 0;
