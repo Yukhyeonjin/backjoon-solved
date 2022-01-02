@@ -3,11 +3,11 @@ package com.solved.yuk.class3.silver;
 import java.io.*;
 
 public class Silver_1012 {
-    static boolean[][] dfs;
-    static int[][] cabbage;
-    static int result, M ,N, K;
-    static int[] moveX = {0,1,0,-1},
-                 moveY = {1,0,-1,0};
+    static boolean[][] dfs; // dfs 방문 배열
+    static int[][] cabbage; // 당근 배열
+    static int result, M ,N, K; // 지렁이 수, x, y, 배추 수
+    static int[] moveX = {0,1,0,-1}, // x 좌표 이동 배열
+                 moveY = {1,0,-1,0}; // y 좌표 이동 배열
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -45,34 +45,16 @@ public class Silver_1012 {
     public static void fs(int x, int y){
         dfs[x][y] = true;
         for(int i = 0; i < 4; i ++){
+            // 인접한 배추를 찾기 위해 미리 이동할 좌표 설정, 1,0 -1,0 0,1 0,-1
             int cx = x + moveX[i],
                 cy = y + moveY[i];
 
+            // 시작과 끝에서 -1이나 +1을 했을 경우 배열 크기를 벗어나는 경우가 있기 때문에 크기를 비교 후 접근
             if(cx >= 0 && cy >= 0 && cx < M && cy < N){
-                if(!dfs[cx][cy] && cabbage[cx][cy] == 1){
+                if(!dfs[cx][cy] && cabbage[cx][cy] == 1){ // 방문하지 않았으며 해당 좌표가 배추일 경우에 해당 좌표에서 다시 dfs 작업
                     fs(cx, cy);
                 }
             }
         }
     }
-
-    /*
-    * static void dfs(int x, int y) {
-		visit[x][y] = true;
-
-		for (int i = 0; i < 4; i++) {
-			int cx = x + dx[i];
-			int cy = y + dy[i];
-
-			if (cx >= 0 && cy >= 0 && cx < M && cy < N) {
-				if (!visit[cx][cy] && cabbage[cx][cy] == 1) {
-					dfs(cx, cy);
-				}
-			}
-
-		}
-
-	}
-    *
-    * */
 }
