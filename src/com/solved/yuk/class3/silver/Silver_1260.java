@@ -8,6 +8,7 @@ import java.util.Queue;
 public class Silver_1260 {
     static int node[][],
                checked[];
+    static Queue<Integer> queue = new LinkedList<>(); // bfs를 위한 큐
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -50,13 +51,12 @@ public class Silver_1260 {
     }
 
     public static void bfs(int x){
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(x);
+        queue.offer(x); // 시작 노드 추가
         checked[x] = 1; // 시작 노드 방문 표시
         while (!queue.isEmpty()){
             x = queue.poll();
             System.out.print(x+" ");
-            for(int i = 0 ; i < node.length; i ++){
+            for(int i = 0 ; i < node.length; i ++){ // x정점과 연결된 i정점들을 확인
                 if (node[x][i] == 1 && checked[i] != 1){
                     queue.offer(i);
                     checked[i] = 1;
