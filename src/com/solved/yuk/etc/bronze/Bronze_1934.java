@@ -11,10 +11,13 @@ public class Bronze_1934 {
         String input[];
         for(int i = 0; i < N; i ++){
             input = br.readLine().split(" ");
+
             int a = Integer.parseInt(input[0]),
-                b = Integer.parseInt(input[1]);
-            int max = a > b  ? a : b,
-                min = a <= b ? a : b, mul = 1;
+                b = Integer.parseInt(input[1]),
+                max = a > b  ? a : b,
+                min = a <= b ? a : b,
+                mul = 1;
+
             while (true){
                 if((max*mul) % min == 0) {
                     bw.write((max*mul)+"\n");
@@ -24,6 +27,7 @@ public class Bronze_1934 {
             }
         }
 
+        br.close();
         bw.flush();
         bw.close();
     }
