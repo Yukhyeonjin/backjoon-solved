@@ -14,9 +14,9 @@ public class Bronze_1037 {
             bw.write(num*num + "");
         }else {
             String input[] = br.readLine().split(" ");
-            long arr[] = new long[N];
+            int arr[] = new int[N];
             for(int i = 0; i < N; i ++){
-                arr[i] = Long.parseLong(input[i]);
+                arr[i] = Integer.parseInt(input[i]);
             }
             Arrays.sort(arr);
             bw.write(arr[0]*arr[N-1]+"");
