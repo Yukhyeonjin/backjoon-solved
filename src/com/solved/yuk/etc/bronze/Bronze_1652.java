@@ -23,6 +23,7 @@ public class Bronze_1652 {
         for(int i = 0; i < N; i ++){
             int hCount = 0, vCount = 0;
             for(int j = 0; j < N; j ++){
+                // 0일 경우 카운트를 추가하고 1이거나 마지막 벽일 경우에는 현재까지의 카운트를 계산하여 가로 또는 세로의 누울 수 있는 공간의 수를 추가한다.
                 if(room[i][j] == 0) hCount ++;
                 if(room[i][j] == 1 || j == N-1){
                     if(hCount >= 2) horizon++;
