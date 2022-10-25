@@ -2,7 +2,7 @@ package com.solved.yuk.etc.bronze;
 
 import java.util.*;
 
-public class Bronzr_6778 {
+public class Bronze_6778 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int antenna = sc.nextInt();
