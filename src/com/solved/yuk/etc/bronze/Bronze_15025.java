@@ -2,7 +2,7 @@ package com.solved.yuk.etc.bronze;
 
 import java.util.Scanner;
 
-public class Main {
+public class Bronze_15025 {
 
 	public static void main(String[] args) {
 
