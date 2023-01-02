@@ -1,3 +1,5 @@
+package com.solved.yuk.etc.bronze;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -17,7 +19,7 @@ public class Bronze_15232 {
     }
 
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new Bronze_15232().solution();
     }
 }
 
