@@ -1,4 +1,4 @@
-package com.solved.etc.bronze;
+package com.solved.yuk.etc.bronze;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -18,6 +18,6 @@ public class Bronze_20976 {
     }
 
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new Bronze_20976().solution();
     }
 }
