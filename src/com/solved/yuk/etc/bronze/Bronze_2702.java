@@ -1,8 +1,8 @@
-package com.solved.yuk.etc.baekjoon;
+package com.solved.yuk.etc.bronze;
 
 import java.util.Scanner;
 
-public class Unkhown_2702 {
+public class Bronze_2702 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
