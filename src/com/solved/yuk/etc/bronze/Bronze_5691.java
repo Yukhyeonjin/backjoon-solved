@@ -21,6 +21,6 @@ public class Bronze_5691 {
     }
 
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new Bronze_5691().solution();
     }
 }
