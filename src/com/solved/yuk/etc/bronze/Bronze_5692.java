@@ -15,7 +15,7 @@ public class Bronze_5692 {
             if(number == 0) break;
             for (int i = number ; i > 0; i /= 10) {
                 int num = i % 10;
-                FBnum += num * factoril(++count);
+                FBnum += num * factorial(++count);
             }
             bw.write(FBnum+"\n");
         }
@@ -25,8 +25,8 @@ public class Bronze_5692 {
         bw.close();
     }
 
-    public static int factoril(int count) {
+    public static int factorial(int count) {
         if(count == 1) return 1;
-        return count * factoril(count - 1);
+        return count * factorial(count - 1);
     }
 }
