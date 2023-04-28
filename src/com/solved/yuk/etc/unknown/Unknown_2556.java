@@ -1,3 +1,5 @@
+package com.solved.yuk.etc.unknown;
+
 import java.util.Scanner;
 
 public class Unknown_2556 {
