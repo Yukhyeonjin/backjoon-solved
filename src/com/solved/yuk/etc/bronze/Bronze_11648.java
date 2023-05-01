@@ -3,8 +3,8 @@ package com.solved.yuk.etc.bronze;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main {
-    private void solution() throws Exception {
+public class Bronze_11648 {
+    private static void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int cnt = 0;
@@ -20,6 +20,6 @@ public class Main {
         System.out.println(cnt);
     }
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        solution();
     }
 }
