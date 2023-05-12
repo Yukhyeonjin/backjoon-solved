@@ -9,6 +9,6 @@ public class Bronze_23303 {
         System.out.println(br.readLine().toLowerCase().indexOf("d2")!=-1 ? "D2":"unrated");
     }
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new Bronze_23303().solution();
     }
 }
