@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Bronze_22938 {
-    private void solution() throws Exception {
+    public static void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int x = Integer.parseInt(st.nextToken());
@@ -23,6 +23,6 @@ public class Bronze_22938 {
     }
 
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        solution();
     }
 }
