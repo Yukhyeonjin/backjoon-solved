@@ -1,4 +1,4 @@
-com.solved.yuk.etc.bronze;
+package com.solved.yuk.etc.bronze;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

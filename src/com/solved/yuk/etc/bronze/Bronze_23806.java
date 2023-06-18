@@ -35,6 +35,6 @@ public class Bronze_23806 {
         System.out.println(sb);
     }
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new Bronze_23806().solution();
     }
 }
