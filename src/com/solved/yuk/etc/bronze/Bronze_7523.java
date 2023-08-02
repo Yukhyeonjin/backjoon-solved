@@ -15,7 +15,7 @@ public class Bronze_7523 {
             long n = Long.parseLong(input[0]),
                  m = Long.parseLong(input[1]);
             bw.write("Scenario #"+(i+1)+":\n");
-            bw.write(gaus(n,m)+"\n\n");
+            bw.write((sum(m) - sum(n-1))+"\n\n");
         }
 
         bw.flush();
@@ -23,12 +23,8 @@ public class Bronze_7523 {
         bw.close();
     }
 
-    public static long gaus(long n, long m){
-        long sum = 0;
-        for(long i  = n; i <= m; i++){
-            sum += i;
-        }
-        return sum;
+    public static long sum(long num){
+        return num * (num + 1) / 2;
     }
 
     public static void main(String[] args) throws IOException {
