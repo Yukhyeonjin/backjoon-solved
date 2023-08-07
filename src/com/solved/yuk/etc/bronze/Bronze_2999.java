@@ -7,11 +7,10 @@ public class Bronze_2999 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in), 1<<16);
 
     public static void main(String[] args) throws Exception {
-        Main main = new Main();
-        System.out.println(main.solution(br.readLine()));
+        System.out.println(solution(br.readLine()));
     }
 
-    public String solution(String msg) throws Exception {
+    public static String solution(String msg) throws Exception {
         int r = getR(msg.length());
         int c = msg.length()/r;
 
@@ -24,7 +23,7 @@ public class Bronze_2999 {
         return sb.toString();
     }
 
-    private int getR(int len) {
+    private static int getR(int len) {
         for (int i = (int) Math.sqrt(len); i >= 1; i--)
             if (len%i==0) return i;
         return 0;
