@@ -1,6 +1,8 @@
+package com.solved.yuk.etc.bronze;
+
 import java.util.Scanner;
  
-public class question_14624 {
+public class Bronze_14624 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
