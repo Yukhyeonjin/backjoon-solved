@@ -42,6 +42,6 @@ public class Bronze_21918 {
         System.out.println(sb);
     }
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new Bronze_21918().solution();
     }
 }

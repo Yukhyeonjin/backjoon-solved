@@ -1,4 +1,4 @@
-package com.solved.yuk.bronze;
+package com.solved.yuk.etc.bronze;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -29,4 +29,5 @@ public class Bronze_16283 {
 
         return n;
     }
+}
 
