@@ -11,7 +11,7 @@ public class Bronze_32209 {
         int x = 0;
         int y = 0;
         for (int i = 0; i < Q; i ++){
-            String input[] = br.readLine().split(" ");
+            String[] input = br.readLine().split(" ");
             int event = Integer.parseInt(input[0]);
             if(event == 1) {
                 x += Integer.parseInt(input[1]);
