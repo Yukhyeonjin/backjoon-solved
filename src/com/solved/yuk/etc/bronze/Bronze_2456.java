@@ -1,4 +1,4 @@
-packege com,solved.yuk.etc.bronze;
+package com.solved.yuk.etc.bronze;
 
 import java.io.IOException;
 import java.util.Scanner;
